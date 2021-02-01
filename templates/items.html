@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <input type="search" id="query" name="q" placeholder="Enter City Name...">
+
+  <button onclick="myfunction()" type="button" >Search</button>
+  <script>
+    function myfunction()
+    {
+      let city=document.querySelector('input').value
+      if(city!=="")
+        window.open(`http://127.0.0.1:8000/image/${city}`)
+    }
+  </script>
+
+</body>
+</html> 
